@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+    --background: 247 245 239;
+    --foreground: 20 38 55;
+    --card: 247 245 239;
+    --card-foreground: 20 38 55;
+    --popover: 247 245 239;
+    --popover-foreground: 20 38 55;
+    --primary: 20 38 55;
+    --primary-foreground: 247 245 239;
+    --secondary: 235 233 229;
+    --secondary-foreground: 20 38 55;
+    --muted: 235 233 229;
+    --muted-foreground: 137 148 155;
+    --accent: 40 198 183;
+    --accent-foreground: 20 38 55;
+    --destructive: 239 68 68;
+    --destructive-foreground: 247 245 239;
+    --border: 229 231 235;
+    --input: 229 231 235;
+    --ring: 40 198 183;
+  }
+
+  .dark {
+    --background: 20 38 55;
+    --foreground: 247 245 239;
+    --card: 20 38 55;
+    --card-foreground: 247 245 239;
+    --popover: 20 38 55;
+    --popover-foreground: 247 245 239;
+    --primary: 40 198 183;
+    --primary-foreground: 20 38 55;
+    --secondary: 34 54 71;
+    --secondary-foreground: 247 245 239;
+    --muted: 34 54 71;
+    --muted-foreground: 159 168 174;
+    --accent: 40 198 183;
+    --accent-foreground: 20 38 55;
+    --destructive: 239 68 68;
+    --destructive-foreground: 247 245 239;
+    --border: 51 74 94;
+    --input: 51 74 94;
+    --ring: 40 198 183;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-offwhite text-navy;
+    font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+      sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
